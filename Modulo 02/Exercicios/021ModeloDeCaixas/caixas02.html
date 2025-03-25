@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, dimgray, silver, dimgray);
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+            nav {
+            background-color: Dimgray;
+            padding: 3px;
+            box-shadow: 3px 3px 7px 1px rgba(0, 0, 0, 0.5);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: auto;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px 0px;
+            box-shadow: 3px 3px 7px 1px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            background-color: rgb(185, 185, 185);
+            width: fit-content;
+        }
+        h2::before {
+            content: '✒';
+        }
+        article {
+            background-color: lightgrey;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="0">Link</a>
+            <a href="0">Link</a>
+            <a href="0">Link</a>
+            <a href="0">Link</a>
+            <a href="0">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Esportes Política e Tecnologia</h2>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae minima eos culpa reiciendis et quidem eaque quod, enim, repellat, explicabo veniam hic dolor vitae quisquam neque officia commodi! Debitis, ipsam?</p>
+                <aside>Artigo Escrito por Lorem</aside>
+            </article>
+            
+        </section>
+        <hr>
+        <section id="noticias">
+            <h2>Noticias sobre o Brasil</h2>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nulla et doloribus sequi vitae autem rerum maiores eligendi? Commodi laudantium, vero deserunt natus facilis architecto nostrum rerum quas repudiandae tempora.</p>
+                <aside>Artigo Escrito por Lorem!</aside>
+            </article>
+            <h2>Continuação das Noticias do Brasil</h2>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor earum voluptas labore est ex! Officiis quibusdam commodi alias ipsum placeat a, quisquam cupiditate. Fugiat nihil harum autem voluptas explicabo adipisci!</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolido pelo JoãoVictor</p>
+    </footer>
+</body>
+</html>
