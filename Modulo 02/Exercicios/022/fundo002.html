@@ -9,16 +9,22 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            color: black;
+            color: rgb(255, 255, 255);
             font-family: Arial, Helvetica, sans-serif;
         }
+        :root {
+            --cor0: rgb(20, 20, 20);
+
+            --sombra: 0px 5px 5px rgba(0, 0, 0, 0.3);
+        }
         body {
-            background-color: white;
+            background-color: rgb(80, 80, 80);
         }
         header {
             padding: 20px;
             background-color: white;
-            border: 2px black solid;
+            border-bottom: 2px white solid;
+            background-color: var(--cor0);
         }
         ul {
             display: flex;
@@ -46,39 +52,43 @@
             background-size: cover;
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
-            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+            box-shadow: var(--sombra);
         }
         div#divDaCapa {
             text-align: center;
             padding-top: 80px;
-            width: 500px;
+            width: 550px;
             height: 300px;
-            border: 2px black solid;
-            background-color: white;
+            border: 2px white solid;
+            background-color: var(--cor0);
             border-radius: 20px;
-            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+            box-shadow: var(--sombra);
 
-            p {
-                margin-top: 15px;
+            p, h1 {
+                margin-top: 10px;
+                font-weight: bold;
+            }
+            h1 {
                 font-size: 25pt;
+            }
+            p {
+                font-size: 20pt;
             }
             input {
                 margin-top: 15px;
                 width: 200px;
                 height: 50px;
-                border: 2px black solid;
-                background-color: white;
+                border: 2px white solid;
+                background-color: rgb(255, 40, 40);
                 font-size: 20pt;
                 font-weight: bold;
-                border-radius: 5px;
-                text-decoration: underline;
-                text-decoration-color: transparent;
+                border-radius: 25px;
             }
             input:hover {
                 cursor: pointer;
-                background-color: lightgrey;
-                text-decoration-color: black;
+                transform: translateY(-2px);
                 transition: .5s;
+                box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
             }
             input:active {
                 margin-top: 12.5px;
@@ -92,11 +102,13 @@
             text-align: center;
             padding: 10px;
             margin: 50px auto;
-            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-            border: 2px black solid;
+            box-shadow: var(--sombra);
+            border: 2px white solid;
+            background-color: var(--cor0);
             
             h2 {
                 font-size: 25pt;
+                font-weight: bold;
             }
         }
     </style>
