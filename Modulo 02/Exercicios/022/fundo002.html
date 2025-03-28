@@ -14,6 +14,7 @@
         }
         :root {
             --cor0: rgb(20, 20, 20);
+            --corfont: rgb(180, 180, 180);
 
             --sombra: 0px 5px 5px rgba(0, 0, 0, 0.3);
         }
@@ -32,14 +33,30 @@
             list-style: none;
             
             a {
-                padding: 5px;
-                border-radius: 5px;
-                text-decoration-color: transparent;
+                position: relative;
+                text-decoration: none;
+                padding: 10px 10px 0px 10px;
+                color: var(--corfont);
+                transition: 0.3s;
             }
-        }
-        a:hover {
-            text-decoration-color: black;
-            transition: .5s;
+            a::after {
+                content: "";
+                position: absolute;
+                background-color: var(--corfont);
+                height: 1.5px;
+                width: 0;
+                left: 0;
+                bottom: -5px;
+                transition: 0.3s;
+            }
+            a:hover::after {
+                width: 100%;
+                color: white;
+            }
+            a:hover {
+                color: white;
+                padding-top: 0;
+            }
         }
         picture#capa {
             display: flex;
