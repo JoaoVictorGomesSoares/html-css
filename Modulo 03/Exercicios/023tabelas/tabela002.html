@@ -17,6 +17,8 @@
             background-color: var(--branca);
         }
         table {
+            position: relative;
+
             width: 500px;
             border-collapse: collapse;
         }
@@ -33,6 +35,11 @@
         thead, tfoot {
             background-color: var(--escura);
             color: var(--branca);
+        }
+        thead tr th {
+            position: sticky;
+            top: -1px;
+            background-color: var(--escura);
         }
         tbody > tr:nth-child(odd) /*odd = impares*/ {
             background-color: var(--clara);
