@@ -48,8 +48,11 @@
             background-color: var(--corbranca);
             font-weight: bolder;
         }
-        .num {
+        .num, .media{
             text-align: right;
+        }
+        .media {
+            background-color: var(--corclara);
         }
     </style>
 </head>
@@ -59,10 +62,10 @@
     <table>
         <thead>
             <tr>
-                <th rowspan="2">Áreas</th>
-                <th rowspan="2">Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
+                <th scope="col" rowspan="2">Áreas</th>
+                <th scope="col" rowspan="2">Disciplinas</th>
+                <th scope="col" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Média</th>
             </tr>
             <tr>
                 <th>Nota 1</th>
@@ -72,7 +75,7 @@
 
         <tbody>
             <tr>
-                <th rowspan="3" class="materia">Exatas</th>
+                <th scope="row" rowspan="3" class="materia">Exatas</th>
                 <td>Matemática</td>
                 <td class="num">0.0</td>
                 <td class="num">0.0</td>
@@ -92,12 +95,12 @@
             </tr>
 
             <tr>
-                <th colspan="4">Médias de Exatas</th>
-                <th class="num">0.0</th>
+                <th scope="row" colspan="4">Médias de Exatas</th>
+                <td class="media">0.0</td>
             </tr>
 
             <tr>
-                <th rowspan="3" class="materia">Humanas</th>
+                <th scope="row" rowspan="3" class="materia">Humanas</th>
                 <td>Biologia</td>
                 <td class="num">0.0</td>
                 <td class="num">0.0</td>
@@ -117,8 +120,8 @@
             </tr>
 
             <tr>
-                <th colspan="4">Médias de Humanas</th>
-                <th class="num">0.0</th>
+                <th scope="row" colspan="4">Médias de Humanas</th>
+                <td class="media">0.0</td>
             </tr>
         </tbody>
     </table>
