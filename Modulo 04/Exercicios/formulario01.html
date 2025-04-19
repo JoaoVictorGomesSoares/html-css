@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!--method="post" faz os dados do formulario não serem visiveis na URL usado para dados sensiveis-->
+        <p>
+            <label for="inome">nome: </label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome: </label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <label for="ienviar">Enviar: </label>
+            <input type="submit" value="Enviar" id="ienviar">
+        </p>
+    </form>
+</body>
+</html>
