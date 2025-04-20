@@ -20,7 +20,7 @@ header {
 }
 
 span#burguer {
-    background-color: #1f1f1f;
+    background: #1f1f1f;
     color: white;
 
     display: block;
@@ -28,9 +28,6 @@ span#burguer {
     padding: 10px;
 
     cursor: pointer;
-}#burguer:hover {
-    background-color: white;
-    color: #1f1f1f;
 }
 
 menu {
