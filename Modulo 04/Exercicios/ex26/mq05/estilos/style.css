@@ -6,17 +6,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body, html {
-    background-color: lightgray;
-}
+body, html { background-color: lightgray; }
 
-header {
-    background-color: gray;
+header { background-color: gray; }
 
-    h1 {
-        padding: 10px;
-        text-align: center;
-    }
+header > h1 {
+    padding: 10px;
+    text-align: center;
 }
 
 span#burguer {
@@ -30,26 +26,21 @@ span#burguer {
     cursor: pointer;
 }
 
-menu {
-    display: none;
+menu { display: none; }
 
-    ul {
-        list-style-type: none;
-    }
-    a {
-        display: block;
+menu > ul { list-style-type: none; }
 
-        padding: 10px;
-        text-decoration: none;
-        text-align: center;
-        background-color: #5d5d5d;
-        color: white;
+menu > a {
+    display: block;
 
-        border-block: 1px solid gray;
-    }:hover {
-        background-color: gray;
-    }
-}
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #5d5d5d;
+    color: white;
+
+    border-block: 1px solid gray;
+}:hover { background-color: gray; }
 
 main {
     width: 90vw;
@@ -60,9 +51,8 @@ main {
     margin-block: 10px;
 }
 
-article > h2 {
-    padding-block: 20px;
-}
+article > h2 { padding-block: 20px; }
+
 article > p {
     text-align: justify;
     margin-block: 20px;
